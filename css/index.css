@@ -1,0 +1,20 @@
+header nav {
+  display: flex;
+  text-decoration: none;
+}
+header nav li a {
+  display: flex;
+  align-content: center;
+  list-style-type: none;
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  font-size: 2rem;
+  padding-left: 15px;
+}
+body {
+  background-image: url("../image/Background.PNG");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
