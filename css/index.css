@@ -1,3 +1,81 @@
+.a-mixin {
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin: 5px;
+  padding: 3px 5px 3px 5px;
+  color: #000000;
+  background-color: #FFFFFF;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-weight: 700;
+}
+.tiny-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+  height: 10%;
+  background-color: blue;
+  flex-flow: column-reverse;
+}
+.tiny-view a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin: 5px;
+  padding: 3px 5px 3px 5px;
+  color: #000000;
+  background-color: #FFFFFF;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-weight: 700;
+}
+.tiny-view a:hover {
+  background-color: black;
+  color: white;
+  transition: 300ms;
+}
+.tiny-view a:active {
+  background-color: #666666;
+}
+.tiny-view .header-h1 {
+  margin-bottom: 15px;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #000000;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #000000;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
 header nav {
   display: flex;
   text-decoration: none;
@@ -12,9 +90,47 @@ header nav li a {
   font-size: 2rem;
   padding-left: 15px;
 }
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+  height: 10%;
+  background-color: blue;
+  flex-flow: column-reverse;
+}
+.nav-container a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin: 5px;
+  padding: 3px 5px 3px 5px;
+  color: #000000;
+  background-color: #FFFFFF;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-weight: 700;
+}
+.nav-container a:hover {
+  background-color: black;
+  color: white;
+  transition: 300ms;
+}
+.nav-container a:active {
+  background-color: #666666;
+}
+.nav-container .header-h1 {
+  margin-bottom: 15px;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
 body {
   background-image: url("../image/Background.PNG");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
+}
+.tl-about-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
