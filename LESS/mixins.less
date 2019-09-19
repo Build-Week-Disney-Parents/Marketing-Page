@@ -7,10 +7,6 @@
     border: 1px solid @txt-color;
     border-radius: 10px;
   }
-
- .nav-container{
-     .tiny-view;
- }
   
   .getWidth(@width) {
     width: @width;
@@ -23,9 +19,9 @@
   }
   
   .navigation-border() {
-    border-bottom: @small-button-border;
-    border-left: @small-button-border;
-    border-right: @small-button-border;
+    border-bottom: @black-thin-border;
+    border-left: @black-thin-border;
+    border-right: @black-thin-border;
   }
   
   .media-button-styler(@padding) {
@@ -39,30 +35,16 @@
           border: 1px solid black;
           border-radius: 15%;
           transition: 0.25s;
+
           &:hover {
             background-color: black;
             color: @white;
           }
+
           &:active {
             background-color: @logo-font-color;
           }
         }
-  }
-  
-  .header-h1-mixin {    
-      text-align: center;
-      color: @lighter-gray;
-      font-weight: 700;
-      font-size: 4rem;
-      margin-top: 5px;    
-  }
-  
-  .header-p-mixin {
-      text-align: center;
-      color: @darker-gray;
-      font-weight: 700;
-      font-size: 3rem;
-      text-shadow: 2px 2px black;
   }
   
   .flex-with-direction(@direction, @wrap) {
@@ -87,7 +69,7 @@
     padding: 3px 5px 3px 5px;
     color: @txt-color;
     background-color: @bg-color;
-    border: @small-button-border;
+    border: @black-thin-border;
     border-radius: 5px;
     font-weight: 700;
 }
