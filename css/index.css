@@ -264,7 +264,7 @@ body {
   align-items: center;
   flex-direction: column;
 }
-@media (min-width: 500px) {
+@media (max-width: 500px) {
   .tl-about-page {
     display: flex;
     justify-content: center;
@@ -272,7 +272,7 @@ body {
     flex-direction: column;
   }
 }
-@media (min-width: 800px) {
+@media (max-width: 800px) {
   .tl-about-page {
     display: flex;
     justify-content: center;
@@ -280,7 +280,7 @@ body {
     flex-direction: column;
   }
 }
-@media (min-width: 1000px) {
+@media (max-width: 1000px) {
   .tl-about-page {
     display: flex;
     justify-content: center;
