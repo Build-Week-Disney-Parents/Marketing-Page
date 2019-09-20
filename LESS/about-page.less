@@ -1,24 +1,107 @@
 .tl-about-page{
+    padding-top: @quarter-percent;
     .custom-flex(center, center);
+    flex-direction: column;
+   
+    @media @phones {
+       .custom-flex(center, center);
+        flex-direction: column;
+
+    }
+
+    @media @tablets {
+        .custom-flex(center, center);
+        flex-direction: column;
+        
+    }
+
+    @media @desktop {
+        .custom-flex(center, center);
+        flex-direction: column;
+    }
 }
 
 .about-page-team-member() {
     .getWidth(@one-hundred-percent);
     color: @txt-color;
     border: @black-thin-border;
+    margin-bottom: @tenth-percent;
+
+    @media @phones {
+        .getWidth(@one-hundred-percent);
+         color: @txt-color;
+         border: @black-thin-border;
+    }
+
+    @media @tablets {
+        .getWidth(@one-hundred-percent);
+         color: @txt-color;
+         border: @black-thin-border;
+    }
+
+    @media @desktop {
+        .getWidth(@one-hundred-percent);
+         color: @txt-color;
+         border: @black-thin-border;
+    }
 }
 
 .react-section-styling() {
    .getWidth(@one-hundred-percent);
    .custom-flex(center, center);
+
+   @media @phones {
+    .getWidth(@one-hundred-percent);
+    .custom-flex(center, center);
+   }
+
+   @media @tablets {
+    .getWidth(@one-hundred-percent);
+    .custom-flex(center, center);
+   }
+
+   @media @desktop {
+    .getWidth(@one-hundred-percent);
+    .custom-flex(center, center);
+  }
 }
 
 .ui-section-styling(){
     .getWidth(@one-hundred-percent);
     .custom-flex(center, center);
+
+    @media @phones {
+        .getWidth(@one-hundred-percent);
+        .custom-flex(center, center);
+    }
+
+    @media @tablets {
+        .getWidth(@one-hundred-percent);
+        .custom-flex(center, center);
+    }
+
+    @media @desktop {
+        .getWidth(@one-hundred-percent);
+        .custom-flex(center, center);
+    }
 }
 
 .database-section-styling(){
     .getWidth(@one-hundred-percent);
     .custom-flex(center, center);
+
+    @media @phones {
+        .getWidth(@one-hundred-percent);
+        .custom-flex(center, center);
+    }
+
+    @media @tablets {
+        .getWidth(@one-hundred-percent);
+        .custom-flex(center, center);
+    }
+
+    @media @desktop {
+        .getWidth(@one-hundred-percent);
+        .custom-flex(center, center);
+    }
 }
