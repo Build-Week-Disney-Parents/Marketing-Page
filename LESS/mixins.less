@@ -38,7 +38,7 @@
 
           &:hover {
             background-color: black;
-            color: @white;
+            color: white;
           }
 
           &:active {
@@ -88,7 +88,7 @@
 
   .tiny-view {
     .custom-flex(center, center);
-    min-width: @maximum-percent;
+    .getwidth(@one-hundred-percent);
     height: @tenth-percent;
     background-color: blue;
     flex-flow: column-reverse;
@@ -101,7 +101,7 @@
         color: white;
         transition: 300ms;
       }
-  
+
       &:active {
         background-color: #666666;
       }
