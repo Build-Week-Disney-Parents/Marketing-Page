@@ -1,5 +1,5 @@
 .container {
-  width: 800px;
+  max-width: 1000px;
   margin: auto;
 }
 header nav {
@@ -31,15 +31,20 @@ body {
 body .aboutVouch {
   display: flex;
   flex-direction: column;
-  margin-top: 130px;
+  margin: 130px 0 20px 0;
+  padding-bottom: 20px;
+  border-bottom: 3px dashed blue;
 }
-.reactButton {
+body .aboutVouch .reactButton {
   border: solid black 2px;
   border-radius: 6px;
   width: 100px;
   text-align: center;
   background-color: skyblue;
 }
-.gallery {
+body .gallery {
+  display: flex;
+  justify-content: center;
   margin-top: 30px;
+  padding: 20px;
 }
