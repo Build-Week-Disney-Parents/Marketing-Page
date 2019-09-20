@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+              
+        <title>Disney Care Vouchers</title>
+              
+        <link rel="stylesheet" href="css/index.css">
+        
+  <script src="./js/index.js" async></script>
+    
+    </head>
+    <header>
+        <nav>
+            <ul>
+                <li><a href = '#'>Home</a></li>
+                <li><a href = '#'>About Me</a></li>
+                <li><a href = '#'>Log In</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <body>
+            <div class = "container">
+            <div class = "aboutVouch">
+            <h1>
+                What are Stroller Passes and Care Vouchers?
+            </h1>
+                <p>
+                    Here at Disney, we want to make your time as enjoyable as possible. To help us do that, we have re-useable strollers that you can rent out while supplies last. We also
+                    have Child Care Vouchers so you can enjoy all the rides, worry free. When our customers are not using these vouchers, this is our program to give away free vouchers to families
+                    in need.
+                </p>
+            </div>
+            <div class = "reactButton">Click Here</div>
+                <h1>
+                    Here are some of our stroller options -
+                </h1>
+            <div class = "gallery">
+                    <img class="S1" id = "Stroller1" src="image/stroller1.jpg" alt="First Stroller" style="width:100%;max-width:300px">
+            </div>
+        </section>
+    </div>
+  <script> var Click = 0;
+    let manipulatableGallery = document.querySelector(".S1")
+    manipulatableGallery.addEventListener('click', (event) => {
+        Click++
+        if (Click === 0){     
+                event.target.src = "image/stroller1.jpg";
+        }else if (Click === 1){
+                event.target.src = "image/stroller2.jpg";
+        }else if (Click === 2){
+                event.target.src = "image/stroller3.jpg";
+        }else if (Click === 3){
+                event.target.src = "image/stroller4.jpg";    
+        }else{
+            Click = 0;
+            event.target.src = "image/stroller1.jpg";
+        }
+    }); </script>
+        </body>
+        </html>

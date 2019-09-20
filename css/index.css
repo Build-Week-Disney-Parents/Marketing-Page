@@ -1,20 +1,45 @@
-header nav {
-  display: flex;
-  text-decoration: none;
+.container {
+  width: 800px;
+  margin: auto;
 }
-header nav li a {
+header nav {
+  padding-left: 70px;
+}
+header nav ul {
+  display: flex;
+  list-style-type: none;
+  font-size: 2rem;
+}
+header nav ul li a {
   display: flex;
   align-content: center;
-  list-style-type: none;
   text-decoration: none;
-  list-style: none;
   color: white;
-  font-size: 2rem;
-  padding-left: 15px;
+  padding: 0 50px 0 50px;
+  margin-top: 70px;
+}
+header nav ul li a:hover {
+  background-color: white;
+  color: black;
 }
 body {
   background-image: url("../image/Background.PNG");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
+}
+body .aboutVouch {
+  display: flex;
+  flex-direction: column;
+  margin-top: 130px;
+}
+.reactButton {
+  border: solid black 2px;
+  border-radius: 6px;
+  width: 100px;
+  text-align: center;
+  background-color: skyblue;
+}
+.gallery {
+  margin-top: 30px;
 }
