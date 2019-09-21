@@ -1,14 +1,14 @@
 body {
-    background-image: url("../image/Background.PNG");
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
+    background-image: url("../image/Background.PNG"), url("../image/bottom.PNG");
+    background-size: contain, cover;
+    background-position: top, bottom;
+    background-repeat: no-repeat, no-repeat;
 
     @media @imageChange{
-        background-image: url("../image/tablet-mobile.PNG");
-        background-size: cover;
-        background-position: top;
-        background-repeat: no-repeat;
+        background-image: url("../image/tablet-mobile.PNG"), url("../image/bottom.PNG");
+        background-size: cover, cover;
+        background-position: top, bottom;
+        background-repeat: no-repeat, no-repeat;
     }
 }
         .aboutVouch{
@@ -32,5 +32,5 @@ body {
                     display: flex;
                     justify-content: center;
                     margin-top: 30px;
-                    padding: 20px;
+                    padding: 30px 0 100px 0;
                 }
