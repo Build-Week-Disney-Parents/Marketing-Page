@@ -1,25 +1,40 @@
 header{
 
     nav{
-        display: flex;
-        text-decoration: none;
+        padding-left: 70px;
+ul{
+    display: flex;
+    list-style-type: none;
+    font-size: 2rem;
+    
+    
+    
+        @media @imageChange{
+        justify-content: space-around;
+        }
+            li{ 
+                a{ display: flex;
+                align-content: center; 
+                text-decoration: none;
+                color: @bg-color;
+                padding: 0 50px 0 50px;
+                margin-top: 70px;
 
-        li a{
-            display: flex;
-            align-content: center; 
-            list-style-type: none;
-            text-decoration: none;
-            list-style: none;
-            color: white;
-            font-size: 2rem;
-            padding-left: 15px;
+                @media @tabletsMax{
+                    justify-content: space-around;
+                    padding: 0 20px 0 20px;
+                }
+    }
+    a:hover{
+        background-color: white;
+        color: black;
+    }
+    }
+    }
+    @media @tabletsMax{
+        justify-content: space-around;
+        padding-left: 0;
+    }
+    }
 
-};
-
-};
-
-}
-
-.nav-container{
-    .tiny-view;
 }
