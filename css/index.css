@@ -257,34 +257,3 @@ body {
   background-position: top;
   background-repeat: no-repeat;
 }
-.tl-about-page {
-  padding-top: 25%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-@media (max-width: 500px) {
-  .tl-about-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-}
-@media (max-width: 800px) {
-  .tl-about-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-}
-@media (max-width: 1000px) {
-  .tl-about-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-}
