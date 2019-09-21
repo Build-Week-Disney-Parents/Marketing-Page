@@ -178,7 +178,7 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Russo One', sans-serif;
   color: #000000;
 }
 h1,
@@ -186,7 +186,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
+  font-family: 'Ultra', serif;
   color: #000000;
 }
 h2 {
@@ -196,7 +196,7 @@ h3 {
   font-size: 2.8rem;
 }
 p {
-  font-size: 1.6rem;
+  font-size: 2rem;
   line-height: 1.4;
 }
 .container {
@@ -205,18 +205,18 @@ p {
   margin: 0 auto;
 }
 header nav {
-  display: flex;
-  text-decoration: none;
+  padding-left: 70px;
 }
-header nav li a {
+header nav ul {
   display: flex;
-  align-content: center;
   list-style-type: none;
-  text-decoration: none;
-  list-style: none;
-  color: white;
   font-size: 2rem;
-  padding-left: 15px;
+}
+@media (max-width: 1350px) {
+  header nav ul {
+    justify-content: space-around;
+  }
+
 }
 .nav-container {
   display: flex;
@@ -226,36 +226,64 @@ header nav li a {
   height: 10%;
   background-color: blue;
   flex-flow: column-reverse;
-}
-.nav-container a {
+
+header nav ul li a {
+  display: flex;
+  align-content: center;
   text-decoration: none;
-  font-size: 1.5rem;
-  margin: 5px;
-  padding: 3px 5px 3px 5px;
-  color: #000000;
-  background-color: #FFFFFF;
-  border: 1px solid black;
-  border-radius: 5px;
-  font-weight: 700;
+  color: #FFFFFF;
+  padding: 0 50px 0 50px;
+  margin-top: 70px;
 }
-.nav-container a:hover {
-  background-color: black;
-  color: white;
-  transition: 300ms;
+@media (max-width: 900px) {
+  header nav ul li a {
+    justify-content: space-around;
+    padding: 0 20px 0 20px;
+  }
 }
-.nav-container a:active {
-  background-color: #666666;
+header nav ul li a:hover {
+  background-color: white;
+  color: black;
 }
-.nav-container .header-h1 {
-  margin-bottom: 15px;
-  font-size: 2.5rem;
-  font-weight: 600;
+@media (max-width: 900px) {
+  header nav {
+    justify-content: space-around;
+    padding-left: 0;
+  }
 }
 body {
   background-image: url("../image/Background.PNG");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
+}
+@media (max-width: 1350px) {
+  body {
+    background-image: url("../image/tablet-mobile.PNG");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+}
+.aboutVouch {
+  display: flex;
+  flex-direction: column;
+  margin: 130px 0 20px 0;
+  padding-bottom: 20px;
+  border-bottom: 3px dashed blue;
+}
+.aboutVouch .reactButton {
+  border: solid black 2px;
+  border-radius: 6px;
+  width: 100px;
+  text-align: center;
+  background-color: skyblue;
+}
+.gallery {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  padding: 20px;
 }
 .tl-about-page {
   padding-top: 25%;
