@@ -257,3 +257,34 @@ body {
   background-position: top;
   background-repeat: no-repeat;
 }
+.tl-about-page {
+  padding-top: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10%;
+  margin-bottom: 2%;
+}
+.team-member {
+  width: 100%;
+  color: #000000;
+  border: 1px solid black;
+  margin-bottom: 5%;
+}
+.team-member h3 {
+  padding-bottom: 1%;
+}
+.ui-section-styling {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.database-section-styling {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
