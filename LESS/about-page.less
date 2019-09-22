@@ -1,7 +1,9 @@
 .tl-about-page {
     .custom-flex(center, center);
     flex-direction: column;
-    margin: 30px 0 5% 0;
+    margin-top: @tenth-percent;
+    margin-bottom: @five-percent;
+    border-bottom: 3px dashed blue;
 }
 
 .team-member {
@@ -11,7 +13,8 @@
     margin-bottom: @five-percent;
 
     h3 {
-        padding-bottom: 10px;
+        padding-bottom: 1%;
+        font-family: 'Ultra', serif;
     }
 }
 
@@ -19,12 +22,15 @@
     .getWidth(@maximum-percent);
     .custom-flex(center, center);
     flex-direction: column;
+    padding-top: @five-percent;
+    border-top: 3px dashed blue;
 }
 
 .database-section-styling {
     .getWidth(@maximum-percent);
     .custom-flex(center, center);
-    margin-bottom: 20px;
+    border-top: 3px dashed blue;
+    padding-top: @five-percent;
 }
 
 .react-section-styling() {
