@@ -1,47 +1,3 @@
-.a-mixin {
-  text-decoration: none;
-  font-size: 1.5rem;
-  margin: 5px;
-  padding: 3px 5px 3px 5px;
-  color: #000000;
-  background-color: #FFFFFF;
-  border: 1px solid black;
-  border-radius: 5px;
-  font-weight: 700;
-}
-.tiny-view {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 10%;
-  background-color: blue;
-  flex-flow: column-reverse;
-}
-.tiny-view a {
-  text-decoration: none;
-  font-size: 1.5rem;
-  margin: 5px;
-  padding: 3px 5px 3px 5px;
-  color: #000000;
-  background-color: #FFFFFF;
-  border: 1px solid black;
-  border-radius: 5px;
-  font-weight: 700;
-}
-.tiny-view a:hover {
-  background-color: black;
-  color: white;
-  transition: 300ms;
-}
-.tiny-view a:active {
-  background-color: #666666;
-}
-.tiny-view .header-h1 {
-  margin-bottom: 15px;
-  font-size: 2.5rem;
-  font-weight: 600;
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -170,6 +126,50 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.a-mixin {
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin: 5px;
+  padding: 3px 5px 3px 5px;
+  color: #000000;
+  background-color: #FFFFFF;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-weight: 700;
+}
+.tiny-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+  background-color: blue;
+  flex-flow: column-reverse;
+}
+.tiny-view a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin: 5px;
+  padding: 3px 5px 3px 5px;
+  color: #000000;
+  background-color: #FFFFFF;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-weight: 700;
+}
+.tiny-view a:hover {
+  background-color: black;
+  color: white;
+  transition: 300ms;
+}
+.tiny-view a:active {
+  background-color: #666666;
+}
+.tiny-view .header-h1 {
+  margin-bottom: 15px;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
 * {
   box-sizing: border-box;
 }
@@ -202,19 +202,36 @@ p {
 .container {
   max-width: 800px;
   width: 100%;
-  margin: 0 auto;
+  margin: auto;
 }
-header nav {
-  padding-left: 70px;
+body {
+  background-image: url("../image/Background.PNG");
+  background-size: 100vw;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+@media (max-width: 1350px) {
+  body {
+    background-image: none;
+  }
+}
+@media (max-width: 900px) {
+  header nav {
+    justify-content: space-around;
+  }
 }
 header nav ul {
   display: flex;
   list-style-type: none;
   font-size: 2rem;
+  width: 100%;
 }
 @media (max-width: 1350px) {
   header nav ul {
     justify-content: space-around;
+    background-color: #061E91;
+    padding-bottom: 40px;
+    border-bottom: 5px solid #868686;
   }
 }
 header nav ul li a {
@@ -222,49 +239,42 @@ header nav ul li a {
   align-content: center;
   text-decoration: none;
   color: #FFFFFF;
-  padding: 0 50px 0 50px;
-  margin-top: 70px;
+  margin-top: 40px;
 }
-@media (max-width: 900px) {
+@media (max-width: 1350px) {
   header nav ul li a {
     justify-content: space-around;
-    padding: 0 20px 0 20px;
   }
 }
-header nav ul li a:hover {
+@media (min-width: 1000px) {
+  header nav ul li a {
+    padding: 0 50px 0 50px;
+  }
+}
+header nav ul li a a:hover {
   background-color: white;
   color: black;
 }
-@media (max-width: 900px) {
-  header nav {
-    justify-content: space-around;
-    padding-left: 0;
-  }
-}
 .nav-container {
-  padding-bottom: 50px;
+  padding: 30px;
+  width: 100vw;
   text-align: center;
-}
-body {
-  background-image: url("../image/Background.PNG"), url("../image/bottom.PNG");
-  background-size: contain, cover;
-  background-position: top, bottom;
-  background-repeat: no-repeat, no-repeat;
-}
-@media (max-width: 1350px) {
-  body {
-    background-image: url("../image/tablet-mobile.PNG"), url("../image/bottom.PNG");
-    background-size: cover, cover;
-    background-position: top, bottom;
-    background-repeat: no-repeat, no-repeat;
-  }
+  background-color: #061E91;
+  border-top: 3px solid #868686;
+  bottom: 0;
 }
 .aboutVouch {
   display: flex;
   flex-direction: column;
-  margin: 130px 0 20px 0;
+  align-content: center;
+  margin: 150px 0 20px 0;
   padding-bottom: 20px;
   border-bottom: 3px dashed blue;
+}
+@media (max-width: 1350px) {
+  .aboutVouch {
+    margin: 10px 0 20px 0;
+  }
 }
 .aboutVouch .reactButton {
   border: solid black 2px;
@@ -280,13 +290,11 @@ body {
   padding: 30px 0 100px 0;
 }
 .tl-about-page {
-  padding-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 10%;
-  margin-bottom: 2%;
+  margin: 30px 0 5% 0;
 }
 .team-member {
   width: 100%;
@@ -295,7 +303,7 @@ body {
   margin-bottom: 5%;
 }
 .team-member h3 {
-  padding-bottom: 1%;
+  padding-bottom: 10px;
 }
 .ui-section-styling {
   width: 100%;
@@ -309,4 +317,5 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }

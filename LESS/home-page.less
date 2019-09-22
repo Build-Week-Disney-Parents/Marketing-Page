@@ -1,23 +1,14 @@
-body {
-    background-image: url("../image/Background.PNG"), url("../image/bottom.PNG");
-    background-size: contain, cover;
-    background-position: top, bottom;
-    background-repeat: no-repeat, no-repeat;
-
-    @media @imageChange{
-        background-image: url("../image/tablet-mobile.PNG"), url("../image/bottom.PNG");
-        background-size: cover, cover;
-        background-position: top, bottom;
-        background-repeat: no-repeat, no-repeat;
-    }
-}
         .aboutVouch{
             display:flex;
             flex-direction: column;
-            margin: 130px 0 20px 0;
+            align-content: center;
+            margin: 150px 0 20px 0;
             padding-bottom: 20px;
             border-bottom: 3px dashed blue;
-        
+
+            @media @imageChange{
+            margin: 10px 0 20px 0;
+            }
 
             .reactButton{
             border: solid black 2px;
