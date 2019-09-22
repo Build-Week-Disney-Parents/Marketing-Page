@@ -37,11 +37,6 @@
 .tiny-view a:active {
   background-color: #666666;
 }
-.tiny-view .header-h1 {
-  margin-bottom: 15px;
-  font-size: 2.5rem;
-  font-weight: 600;
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -336,11 +331,6 @@ header nav ul li a:hover {
 .footer-container a:active {
   background-color: #666666;
 }
-.footer-container .header-h1 {
-  margin-bottom: 15px;
-  font-size: 2.5rem;
-  font-weight: 600;
-}
 @media (min-width: 500px) {
   .footer-container {
     min-width: 100%;
@@ -484,7 +474,8 @@ body {
   align-items: center;
   flex-direction: column;
   margin-top: 10%;
-  margin-bottom: 2%;
+  margin-bottom: 5%;
+  border-bottom: 3px dashed blue;
 }
 .team-member {
   width: 100%;
@@ -494,6 +485,7 @@ body {
 }
 .team-member h3 {
   padding-bottom: 1%;
+  font-family: 'Ultra', serif;
 }
 .ui-section-styling {
   width: 100%;
@@ -501,10 +493,14 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-top: 5%;
+  border-top: 3px dashed blue;
 }
 .database-section-styling {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-top: 3px dashed blue;
+  padding-top: 5%;
 }
