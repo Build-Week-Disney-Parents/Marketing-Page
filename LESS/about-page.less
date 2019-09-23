@@ -1,10 +1,35 @@
 .tl-about-page {
+
+    @media @desktop {
+        padding-top: @tenth-percent;
+        margin-top: @two-percent;
+    }
+
+    @media @tablets {
+
+    padding-top: @twenty-percent;
+    .custom-flex(center, center);
+    flex-direction: column;
+    margin-top: @tenth-percent;
+    margin-bottom: @five-percent;
+    border-bottom: 3px dashed blue;
+        
+    }
+
+    @media @phones {
+     
     padding-top: @quarter-percent;
     .custom-flex(center, center);
     flex-direction: column;
     margin-top: @tenth-percent;
     margin-bottom: @five-percent;
     border-bottom: 3px dashed blue;
+        
+    }
+
+    @media @smallPhone {
+      padding-top: 62.5%;
+    }
 }
 
 .team-member {
@@ -38,3 +63,7 @@
     .getWidth(@one-hundred-percent);
     .custom-flex(center, center);
 }
+
+li {
+    margin-top: @five-percent;
+} 

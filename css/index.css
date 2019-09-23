@@ -195,7 +195,7 @@ p {
   line-height: 1.4;
 }
 .container {
-  max-width: 800px;
+  max-width: auto;
   width: 100%;
   margin: 0 auto;
 }
@@ -514,4 +514,7 @@ body {
   align-items: center;
   border-top: 3px dashed blue;
   padding-top: 5%;
+}
+li {
+  margin-top: 5%;
 }
