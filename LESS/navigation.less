@@ -1,41 +1,45 @@
 header{
 
     nav{
-        padding-left: 70px;
-ul{
-    display: flex;
-    list-style-type: none;
-    font-size: 2rem;
-    
-    
-    
-        @media @imageChange{
-        justify-content: space-around;
+        @media @tabletsMax{
+            justify-content: space-around;
         }
-            li{ 
-                a{ display: flex;
-                align-content: center; 
-                text-decoration: none;
-                color: @bg-color;
-                padding: 0 50px 0 50px;
-                margin-top: 70px;
-
-                @media @tabletsMax{
+            ul{
+                display: flex;
+                list-style-type: none;
+                font-size: 2rem;
+                width: 100%;
+                
+                
+                    @media @imageChange{
                     justify-content: space-around;
-                    padding: 0 20px 0 20px;
+                    background-color:#061E91;
+                    padding-bottom: 40px;
+                    border-bottom: 5px solid #868686;
+                    
+                    }
+                        li{ 
+                            a{ display: flex;
+                            align-content: center; 
+                            text-decoration: none;
+                            color: @bg-color;
+                            margin-top: 40px;
+                            
+                            @media @imageChange{
+                            justify-content: space-around;
+                            }
+                                @media @desktop{
+                                padding: 0 50px 0 50px;
+                            }
+
+            
+                a:hover{
+                    background-color: white;
+                    color: black;
                 }
-    }
-    a:hover{
-        background-color: white;
-        color: black;
-    }
-    }
-    }
-    @media @tabletsMax{
-        justify-content: space-around;
-        padding-left: 0;
-    }
-    }
+                }
+                }
+                }
 
 }
   .tablet-view {
@@ -105,4 +109,3 @@ ul{
         background-color: #666666;
       }
     }
-}
