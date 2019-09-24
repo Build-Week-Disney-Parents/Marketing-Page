@@ -107,3 +107,24 @@
       }
     }
   }
+
+  .mobile-view() {
+    .custom-flex(center, center);
+    height: @tenth-percent;
+    background-color: @footer-blue;
+    flex-flow: column-reverse;
+  
+    a {
+      .a-mixin();
+  
+      &:hover {
+        background-color: darken(black, 5%);
+        color: white;
+        transition: 300ms;
+      }
+  
+      &:active {
+        background-color: #666666;
+      }
+    }
+}

@@ -1,42 +1,3 @@
-.a-mixin {
-  text-decoration: none;
-  font-size: 1.5rem;
-  margin: 5px;
-  padding: 3px 5px 3px 5px;
-  color: #000000;
-  background-color: #FFFFFF;
-  border: 1px solid black;
-  border-radius: 5px;
-  font-weight: 700;
-}
-.tiny-view {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background-color: #061E91;
-  color: #868686;
-  flex-flow: column-reverse;
-}
-.tiny-view a {
-  text-decoration: none;
-  font-size: 1.5rem;
-  margin: 5px;
-  padding: 3px 5px 3px 5px;
-  color: #000000;
-  background-color: #FFFFFF;
-  border: 1px solid black;
-  border-radius: 5px;
-  font-weight: 700;
-}
-.tiny-view a:hover {
-  background-color: black;
-  color: white;
-  transition: 300ms;
-}
-.tiny-view a:active {
-  background-color: #666666;
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -181,8 +142,8 @@ table {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 10%;
-  background-color: blue;
+  background-color: #061E91;
+  color: #868686;
   flex-flow: column-reverse;
 }
 .tiny-view a {
@@ -236,11 +197,11 @@ p {
 .container {
   max-width: 800px;
   width: 100%;
-  margin: auto;
+  margin: 0 auto;
 }
 body {
   background-image: url("../image/Background.PNG");
-  background-size: 100vw;
+  background-size: contain;
   background-position: top;
   background-repeat: no-repeat;
 }
@@ -289,7 +250,7 @@ header nav ul li a a:hover {
   background-color: white;
   color: black;
 }
-header .tablet-view {
+.tablet-view {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -300,7 +261,7 @@ header .tablet-view {
   background-color: #061E91;
   padding: 15px;
 }
-header .tablet-view a {
+.tablet-view a {
   text-decoration: none;
   color: #000000;
   font-weight: 700;
@@ -311,18 +272,18 @@ header .tablet-view a {
   border-radius: 15%;
   transition: 0.25s;
 }
-header .tablet-view a:hover {
+.tablet-view a:hover {
   background-color: black;
   color: white;
 }
-header .tablet-view a:active {
+.tablet-view a:active {
   background-color: #666666;
 }
-header .tablet-view .header-h1 {
+.tablet-view .header-h1 {
   font-size: 2.5rem;
   font-weight: 600;
 }
-header .desktop-view {
+.desktop-view {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -334,7 +295,7 @@ header .desktop-view {
   width: 100%;
   padding: 15px;
 }
-header .desktop-view a {
+.desktop-view a {
   text-decoration: none;
   color: #000000;
   font-weight: 700;
@@ -345,14 +306,14 @@ header .desktop-view a {
   border-radius: 15%;
   transition: 0.25s;
 }
-header .desktop-view a:hover {
+.desktop-view a:hover {
   background-color: black;
   color: white;
 }
-header .desktop-view a:active {
+.desktop-view a:active {
   background-color: #666666;
 }
-header .desktop-view .header-h1 {
+.desktop-view a .header-h1 {
   font-size: 2.5rem;
   font-weight: 600;
 }
@@ -481,26 +442,11 @@ header .desktop-view .header-h1 {
   .footer-container a:active {
     background-color: #666666;
   }
-  .footer-container .header-h1 {
+  .footer-container a .header-h1 {
     font-size: 2.5rem;
     font-weight: 600;
   }
 }
-body {
-  background-image: url("../image/Background.PNG");
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
-}
-@media (max-width: 1350px) {
-  body {
-    background-image: url("../image/tablet-mobile.PNG");
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-  }
-}
-
 .aboutVouch {
   display: flex;
   flex-direction: column;
@@ -561,7 +507,6 @@ body {
   .tl-about-page {
     padding-top: 10%;
   }
-
 }
 .team-member {
   width: 100%;

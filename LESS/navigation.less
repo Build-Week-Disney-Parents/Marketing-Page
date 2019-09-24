@@ -42,6 +42,7 @@ header{
                 }
 
 }
+}
   .tablet-view {
     .custom-flex(space-between, center);
     flex-flow: row-reverse;
@@ -82,7 +83,6 @@ header{
       &:active {
         background-color: #666666;
       }
-    }
   
     .header-h1 {
       font-size: 2.5rem;
@@ -90,22 +90,5 @@ header{
     }
   }
 
-  .mobile-view() {
-    .custom-flex(center, center);
-    height: @tenth-percent;
-    background-color: @footer-blue;
-    flex-flow: column-reverse;
-  
-    a {
-      .a-mixin();
-  
-      &:hover {
-        background-color: darken(black, 5%);
-        color: white;
-        transition: 300ms;
-      }
-  
-      &:active {
-        background-color: #666666;
-      }
-    }
+
+}
