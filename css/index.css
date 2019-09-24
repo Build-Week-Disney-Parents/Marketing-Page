@@ -234,7 +234,7 @@ header nav ul li a {
   align-content: center;
   text-decoration: none;
   color: #FFFFFF;
-  margin-top: 40px;
+  margin-left: 60px;
 }
 @media (max-width: 1350px) {
   header nav ul li a {
@@ -463,7 +463,8 @@ header nav ul li a a:hover {
 .aboutVouch .reactButton {
   border: solid black 2px;
   border-radius: 6px;
-  width: 100px;
+  width: 200px;
+  font-size: 2rem;
   text-align: center;
   background-color: skyblue;
 }
