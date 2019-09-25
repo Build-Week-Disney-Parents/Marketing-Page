@@ -201,7 +201,7 @@ p {
 }
 body {
   background-image: url("../image/Background.PNG"), url("../image/Sides.PNG");
-  background-size: contain, contain 100vh;
+  background-size: contain, 100vw 100vh;
   background-position: top, top;
   background-repeat: no-repeat, no-repeat;
 }
@@ -515,8 +515,11 @@ header nav ul li a a:hover {
   margin-bottom: 5%;
 }
 .team-member h3 {
-  padding-bottom: 1%;
-  font-family: 'Ultra', serif;
+  padding: 1%;
+  padding-top: 2%;
+}
+.team-member p {
+  padding: 1%;
 }
 .ui-section-styling {
   width: 100%;
