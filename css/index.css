@@ -200,10 +200,10 @@ p {
   margin: 0 auto;
 }
 body {
-  background-image: url("../image/Background.PNG");
-  background-size: contain;
-  background-position: top;
-  background-repeat: no-repeat;
+  background-image: url("../image/Background.PNG"), url("../image/Sides.PNG");
+  background-size: contain, contain 100vh;
+  background-position: top, top;
+  background-repeat: no-repeat, no-repeat;
 }
 @media (max-width: 1350px) {
   body {
@@ -453,7 +453,6 @@ header nav ul li a a:hover {
   align-content: center;
   margin: 150px 0 20px 0;
   padding-bottom: 20px;
-  border-bottom: 3px dashed blue;
 }
 @media (max-width: 1350px) {
   .aboutVouch {

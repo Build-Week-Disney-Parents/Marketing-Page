@@ -15,3 +15,21 @@ var Click = 0;
             event.target.src = "image/stroller1.jpg";
         }
     });
+cont = 1;
+let gifmove = () =>{
+        console.log (cont);
+        cont++;
+    if (cont === 2){
+        document.querySelector(".strGif").src = "image/gif2.png";
+}else if(cont === 3){
+        document.querySelector(".strGif").src = "image/gif3.png";
+        cont++;
+}else {
+        stopgif();
+}
+};
+
+let giffy = setInterval(gifmove, 150);
+let stopgif = () =>{
+clearInterval(giffy);
+}
