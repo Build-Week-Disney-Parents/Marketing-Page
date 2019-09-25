@@ -1,6 +1,8 @@
 var containerProperty= document.getElementsByClassName("container");
 
-var footerContainer = document.addEventListener("mouseover", (containerProperty) =>{
+let imageEditor = document.getElementById("img-formater");
+
+imageEditor = document.addEventListener("click", (containerProperty) =>{
 
     containerProperty.width = screen.width;
     
