@@ -520,6 +520,7 @@ header nav ul li a a:hover {
 }
 .team-member p {
   padding: 1%;
+  padding-bottom: 2%;
 }
 .ui-section-styling {
   width: 100%;
