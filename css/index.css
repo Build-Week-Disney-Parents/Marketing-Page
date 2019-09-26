@@ -201,7 +201,7 @@ p {
 }
 body {
   background-image: url("../image/Background.PNG"), url("../image/sides.PNG");
-  background-size: contain, 100vh 100vw;
+  background-size: contain, contain 100vh;
   background-position: top, top;
   background-repeat: no-repeat, no-repeat;
 }

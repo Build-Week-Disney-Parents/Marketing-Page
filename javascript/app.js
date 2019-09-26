@@ -1,6 +1,6 @@
 var Click = 0;
     let manipulatableGallery = document.querySelector(".S2")
-    manipulatableGallery.addEventListener('click', (event) => {
+    manipulatableGallery.addEventListener('click', () => {
         Click++
         if (Click === 0){     
                 document.querySelector(".S1").src = "image/stroller1.jpg";
@@ -11,13 +11,14 @@ var Click = 0;
         }else if (Click === 3){
                 document.querySelector(".S1").src = "image/stroller4.jpg";    
         }else{
-            document.querySelector(".S1").src = "image/stroller4.jpg";
             Click = 0;
+            document.querySelector(".S1").src = "image/stroller1.jpg";
+
         }
     });
 var Clicker = 0;
     let manipulatableGal = document.querySelector(".S3")
-    manipulatableGal.addEventListener('click', (event) => {
+    manipulatableGal.addEventListener('click', () => {
         Clicker++
         if (Clicker === 0){     
                 document.querySelector(".S1").src = "image/stroller4.jpg";
@@ -25,8 +26,10 @@ var Clicker = 0;
                 document.querySelector(".S1").src = "image/stroller3.jpg";
         }else if (Clicker === 2){
                 document.querySelector(".S1").src = "image/stroller2.jpg";
+        }else if (Clicker === 3){
+                document.querySelector(".S1").src = "image/stroller1.jpg";
         }else {
-                document.querySelector(".S1").src = "image/stroller1.jpg";   
+                document.querySelector(".S1").src = "image/stroller4.jpg";
                 Clicker = 0;
         }
     });
