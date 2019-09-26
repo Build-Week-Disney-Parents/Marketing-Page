@@ -26,7 +26,8 @@ var Clicker = 0;
         }else if (Clicker === 2){
                 document.querySelector(".S1").src = "image/stroller2.jpg";
         }else {
-                document.querySelector(".S1").src = "image/stroller4.jpg";    
+                Clicker = 0;
+                document.querySelector(".S1").src = "image/stroller1.jpg";    
         }
     });
 
