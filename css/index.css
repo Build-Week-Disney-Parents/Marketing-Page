@@ -200,8 +200,8 @@ p {
   margin: 0 auto;
 }
 body {
-  background-image: url("../image/Background.PNG"), url("../image/sides.PNG");
-  background-size: contain, contain;
+  background-image: url("../image/Background.PNG"), url("../image/Sides.PNG");
+  background-size: contain, contain 100vh;
   background-position: top, top;
   background-repeat: no-repeat, no-repeat;
 }
