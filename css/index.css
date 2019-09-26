@@ -549,3 +549,23 @@ header nav ul li a a:hover {
 li {
   margin-top: 5%;
 }
+body .aboutVouch {
+  display: flex;
+  flex-direction: column;
+  margin: 130px 0 20px 0;
+  padding-bottom: 20px;
+  border-bottom: 3px dashed blue;
+}
+body .aboutVouch .reactButton {
+  border: solid black 2px;
+  border-radius: 6px;
+  width: 100px;
+  text-align: center;
+  background-color: skyblue;
+}
+body .gallery {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  padding: 20px;
+}
