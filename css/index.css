@@ -200,7 +200,11 @@ p {
   margin: 0 auto;
 }
 body {
+<<<<<<< HEAD
   background-image: url("../image/Background.PNG"), url("../image/sides.PNG");
+=======
+  background-image: url("../image/Background.PNG"), url("../image/Sides.PNG");
+>>>>>>> aa5fd9be45f7bc50a1b61e55d1d67ff7498661b9
   background-size: contain, contain 100vh;
   background-position: top, top;
   background-repeat: no-repeat, no-repeat;
