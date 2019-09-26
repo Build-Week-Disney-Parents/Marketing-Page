@@ -11,7 +11,7 @@ var Click = 0;
         }else if (Click === 3){
                 document.querySelector(".S1").src = "image/stroller4.jpg";    
         }else{
-            document.querySelector(".S1").src = "image/stroller1.jpg";
+            document.querySelector(".S1").src = "image/stroller4.jpg";
             Click = 0;
         }
     });
