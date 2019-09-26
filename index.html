@@ -9,14 +9,19 @@
         <link rel="stylesheet" href="css/index.css">
         
   <script src="./js/index.js" async></script>
+        <link href="https://fonts.googleapis.com/css?family=Ultra&display=swap" rel="stylesheet">
+        <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     
     </head>
     <header>
         <nav>
             <ul>
-                <li><a href = '#'>Home</a></li>
-                <li><a href = '#'>About Me</a></li>
-                <li><a href = '#'>Log In</a></li>
+                <li><a href = 'index.html'>Home</a></li>
+                <li><a href = 'about.html'>About Us</a></li>
+                <li><a href = 'https://disney-parent-bwpt.netlify.com/ '>Sign In</a></li>
             </ul>
         </nav>
     </header>
@@ -24,9 +29,10 @@
         <body>
             <div class = "container">
             <div class = "aboutVouch">
-            <h1>
+
+            <h2>
                 What are Stroller Passes and Care Vouchers?
-            </h1>
+            </h2>
                 <p>
                     Here at Disney, we want to make your time as enjoyable as possible. To help us do that, we have re-useable strollers that you can rent out while supplies last. We also
                     have Child Care Vouchers so you can enjoy all the rides, worry free. When our customers are not using these vouchers, this is our program to give away free vouchers to families
@@ -34,30 +40,38 @@
                 </p>
             <div class = "reactButton">Click Here</div>
             </div>
-                <h1>
+            <div class = "stroller">
+                <img class="strGif" src="image/gif.jpg" alt="" style="width:100%;max-width:900px">
+            </div>
+                <h2>
                     Here are some of our stroller options -
-                </h1>
+                </h2>
+
             <div class = "gallery">
-                    <img class="S1" id = "Stroller1" src="image/stroller1.jpg" alt="First Stroller" style="width:100%;max-width:300px">
+                    <img class="S2" id= "left" src= "image/left.png" alt= "">
+                    <img class="S1" id= "Stroller1" src="image/stroller1.jpg" alt="First Stroller" style="width:100%;max-width:300px">
+                    <img class= "S3" id= "right" src= "image/right.png" alt= "">
             </div>
         </section>
-    </div>
-  <script> var Click = 0;
-    let manipulatableGallery = document.querySelector(".S1")
-    manipulatableGallery.addEventListener('click', (event) => {
-        Click++
-        if (Click === 0){     
-                event.target.src = "image/stroller1.jpg";
-        }else if (Click === 1){
-                event.target.src = "image/stroller2.jpg";
-        }else if (Click === 2){
-                event.target.src = "image/stroller3.jpg";
-        }else if (Click === 3){
-                event.target.src = "image/stroller4.jpg";    
-        }else{
-            Click = 0;
-            event.target.src = "image/stroller1.jpg";
-        }
-    }); </script>
+    <footer>
+        <div class="footer-container">
+            <div>
+            <p>&copy;Disney Parents!</p>
+          </div>
+          <a
+            href="https://www.facebook.com/LambdaSchoolOnline/"
+            class="fa fa-facebook"
+          ></a>
+          <a href="twitter.com/lambdaschool" class="fa fa-twitter"></a>
+          <a
+            href="https://www.linkedin.com/school/lambdaschool/"
+            class="fa fa-linkedin"
+          ></a>
+          <a href="instagram.com/lambdaschool" class="fa fa-instagram"></a>
+        </div>
+      </section>
+    </footer>
+
+    <script src="javascript/app.js"></script>
         </body>
         </html>

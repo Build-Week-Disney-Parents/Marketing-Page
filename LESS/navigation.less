@@ -1,26 +1,93 @@
 header{
 
     nav{
-        padding-left: 70px;
-ul{
-    display: flex;
-    list-style-type: none;
-    font-size: 2rem;
-        li{ 
-            a{ display: flex;
-               align-content: center; 
-               text-decoration: none;
-               color: white;
-               padding: 0 50px 0 50px;
-               margin-top: 70px;
-}
-a:hover{
-    background-color: white;
-    color: black;
-}
-}
-}
+        @media @tabletsMax{
+            justify-content: space-around;
+        }
+            ul{
+                display: flex;
+                list-style-type: none;
+                font-size: 2rem;
+                width: 100%;
+                
+                
+                    @media @imageChange{
+                    justify-content: space-around;
+                    background-color:#061E91;
+                    padding-bottom: 40px;
+                    border-bottom: 5px solid #868686;
+                    
+                    }
+                        li{ 
+                            a{ display: flex;
+                            align-content: center; 
+                            text-decoration: none;
+                            color: @bg-color;
+                            margin-left: 60px;
+                            
+                            @media @imageChange{
+                            justify-content: space-around;
+                            }
+                                @media @desktop{
+                                padding: 0 50px 0 50px;
+                            }
+
+            
+                a:hover{
+                    background-color: white;
+                    color: black;
+                }
+                }
+                }
+                }
 
 }
+}
+  .tablet-view {
+    .custom-flex(space-between, center);
+    flex-flow: row-reverse;
+    .navigation-border();
+    background-color: @footer-blue;
+    padding: 15px;
+  
+    .media-button-styler(10px);
+  
+    .header-h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+  }
+  
+  .desktop-view {
+    .custom-flex(space-between, center);
+    flex-flow: row-reverse;
+    .navigation-border();
+    background-color: @footer-blue;
+    width: @maximum-percent;
+    padding: 15px;
+  
+    a {
+      text-decoration: none;
+      color: @txt-color;
+      font-weight: 700;
+      background-color: @bg-color;
+      padding: 10px;
+      margin: 15px;
+      border: 1px solid black;
+      border-radius: 15%;
+      transition: 0.25s;
+      &:hover {
+        background-color: black;
+        color: white;
+      }
+      &:active {
+        background-color: #666666;
+      }
+  
+    .header-h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+  }
 
 }

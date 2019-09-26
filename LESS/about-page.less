@@ -1,0 +1,69 @@
+.tl-about-page {
+
+    @media @desktop {
+        padding-top: @tenth-percent;
+        margin-top: @two-percent;
+    }
+
+    @media @tablets {
+
+    padding-top: @twenty-percent;
+    .custom-flex(center, center);
+    flex-direction: column;
+    margin-top: @tenth-percent;
+    margin-bottom: @five-percent;
+    border-bottom: 3px dashed blue;
+        
+    }
+
+    @media @phones {
+     
+    padding-top: @quarter-percent;
+    .custom-flex(center, center);
+    flex-direction: column;
+    margin-top: @tenth-percent;
+    margin-bottom: @five-percent;
+    border-bottom: 3px dashed blue;
+        
+    }
+
+    @media @smallPhone {
+      padding-top: @tenth-percent;
+    }
+}
+
+.team-member {
+    .getWidth(@maximum-percent);
+    color: @txt-color;
+    border: @black-thin-border;
+    margin-bottom: @five-percent;
+
+    h3 {
+        padding-bottom: 1%;
+        font-family: 'Ultra', serif;
+    }
+}
+
+.ui-section-styling {
+    .getWidth(@maximum-percent);
+    .custom-flex(center, center);
+    flex-direction: column;
+    padding-top: @five-percent;
+    border-top: 3px dashed blue;
+}
+
+.database-section-styling {
+    .getWidth(@maximum-percent);
+    .custom-flex(center, center);
+    border-top: 3px dashed blue;
+    padding-top: @five-percent;
+}
+
+.react-section-styling() {
+    .getWidth(@one-hundred-percent);
+    .custom-flex(center, center);
+}
+
+li {
+    margin-top: @five-percent;
+} 

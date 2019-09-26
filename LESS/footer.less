@@ -1,0 +1,18 @@
+.footer-container {
+    .tiny-view; // 500 px and less
+  
+    @media @phones {
+      min-width: @maximum-percent;
+      .mobile-view();
+    }
+  
+    @media @tablets {
+      .getWidth(@maximum-percent);
+      .tablet-view();
+    }
+  
+    @media @desktop {
+      .getWidth(@maximum-percent);
+      .desktop-view();
+    }
+  }
