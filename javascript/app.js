@@ -1,20 +1,37 @@
 var Click = 0;
-    let manipulatableGallery = document.querySelector(".S1")
+    let manipulatableGallery = document.querySelector(".S2")
     manipulatableGallery.addEventListener('click', (event) => {
         Click++
         if (Click === 0){     
-                event.target.src = "image/stroller1.jpg";
+                document.querySelector(".S1").src = "image/stroller1.jpg";
         }else if (Click === 1){
-                event.target.src = "image/stroller2.jpg";
+                document.querySelector(".S1").src = "image/stroller2.jpg";
         }else if (Click === 2){
-                event.target.src = "image/stroller3.jpg";
+                document.querySelector(".S1").src = "image/stroller3.jpg";
         }else if (Click === 3){
-                event.target.src = "image/stroller4.jpg";    
+                document.querySelector(".S1").src = "image/stroller4.jpg";    
         }else{
             Click = 0;
-            event.target.src = "image/stroller1.jpg";
+            document.querySelector(".S1").src = "image/stroller1.jpg";
         }
     });
+
+    var Click = 0;
+    let manipulatableGal = document.querySelector(".S3")
+    manipulatableGal.addEventListener('click', (event) => {
+        Click++
+        if (Click === 0){     
+                document.querySelector(".S1").src = "image/stroller4.jpg";
+        }else if (Click === 1){
+                document.querySelector(".S1").src = "image/stroller3.jpg";
+        }else if (Click === 2){
+                document.querySelector(".S1").src = "image/stroller2.jpg";
+        }else (Click === 3){
+                document.querySelector(".S1").src = "image/stroller4.jpg";    
+        }
+    });
+
+
 cont = 1;
 let gifmove = () =>{
         console.log (cont);
