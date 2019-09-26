@@ -1,11 +1,31 @@
-var containerProperty= document.getElementsByClassName("container");
+let imgArray = [];
+
+imgArray = new Image();
+imgArray[0] = "/images/stephanie.jpg";
+
+imgArray = new Image();
+imgArray[1] = "/images/leon.jpg";
+
+imgArray = new Image();
+imgArray[2] = "/images/trevor.jpg";
+
+imgArray = new Image();
+imgArray[3] = "/images/aaron.jpg";
 
 let imageEditor = document.getElementById("img-formater");
 
-imageEditor = document.addEventListener("click", (containerProperty) =>{
+let index = 0;
 
-    containerProperty.width = screen.width;
+imageEditor = document.addEventListener("click", () =>{
+
+    if(index < 3)
+    {
+        ++index;
+    }
+    else {
+        index = 0;
+    }
     
-    console.log(containerProperty.width);
+    imageEditor.src = imgArray[index];
 
 });
