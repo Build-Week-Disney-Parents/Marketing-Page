@@ -5,13 +5,17 @@ var Click = 0;
         if (Click === 0){     
                 document.querySelector(".S1").src = "image/stroller1.jpg";
         }else if (Click === 1){
+                Clicker = 2;
                 document.querySelector(".S1").src = "image/stroller2.jpg";
         }else if (Click === 2){
+                Clicker = 1;
                 document.querySelector(".S1").src = "image/stroller3.jpg";
         }else if (Click === 3){
+                Clicker = 0;
                 document.querySelector(".S1").src = "image/stroller4.jpg";    
         }else{
             Click = 0;
+            Clicker = 3;
             document.querySelector(".S1").src = "image/stroller1.jpg";
 
         }
@@ -21,15 +25,20 @@ var Clicker = 0;
     manipulatableGal.addEventListener('click', () => {
         Clicker++
         if (Clicker === 0){     
+                Click = 3;
                 document.querySelector(".S1").src = "image/stroller4.jpg";
         }else if (Clicker === 1){
+                Click = 2;
                 document.querySelector(".S1").src = "image/stroller3.jpg";
         }else if (Clicker === 2){
+                Click = 1;
                 document.querySelector(".S1").src = "image/stroller2.jpg";
         }else if (Clicker === 3){
+                Click = 0;
                 document.querySelector(".S1").src = "image/stroller1.jpg";
         }else {
                 document.querySelector(".S1").src = "image/stroller4.jpg";
+                Click = 3;
                 Clicker = 0;
         }
     });
