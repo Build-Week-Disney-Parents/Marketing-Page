@@ -229,7 +229,7 @@ body {
   background-image: url("../image/Background.PNG"), url("../image/Sides.PNG");
   background-size: contain, contain 100vh;
   background-position: top, top;
-  background-repeat: no-repeat, round;
+  background-repeat: no-repeat, round-y;
 }
 @media (max-width: 1350px) {
   body {
