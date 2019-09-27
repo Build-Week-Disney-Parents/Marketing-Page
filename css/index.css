@@ -576,5 +576,6 @@ li {
   margin-top: 5%;
 }
 .img-formater {
-  width: 100%;
+  width: 100px;
+  height: 100px;
 }
