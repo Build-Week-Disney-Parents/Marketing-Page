@@ -12,11 +12,13 @@ imgArray[2] = "/images/trevor.jpg";
 imgArray = new Image();
 imgArray[3] = "/images/aaron.jpg";
 
-let imageEditor = document.getElementById("img-formater");
+let imageEditor = document.querySelector(".img-formater");
 
 let index = 0;
 
-imageEditor = document.addEventListener("click", () =>{
+console.log(imageEditor);
+
+imageEditor = document.addEventListener("click", (imageProperty) =>{
 
     if(index < 3)
     {
@@ -26,6 +28,10 @@ imageEditor = document.addEventListener("click", () =>{
         index = 0;
     }
     
-    imageEditor.src = imgArray[index];
+    imageProperty.src = imgArray[index];
+
+    //console.log(imgArray);
+
+    console.log(imageProperty);
 
 });

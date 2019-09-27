@@ -128,9 +128,10 @@ table {
 }
 .a-mixin {
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   margin: 5px;
   padding: 3px 5px 3px 5px;
+  padding: 2%;
   color: #000000;
   background-color: #FFFFFF;
   border: 1px solid black;
@@ -148,9 +149,10 @@ table {
 }
 .tiny-view a {
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   margin: 5px;
   padding: 3px 5px 3px 5px;
+  padding: 2%;
   color: #000000;
   background-color: #FFFFFF;
   border: 1px solid black;
@@ -163,6 +165,28 @@ table {
   transition: 300ms;
 }
 .tiny-view a:active {
+  background-color: #666666;
+}
+.a-mixin-with-button a {
+  text-decoration: none;
+  font-size: 3rem;
+  margin: 5px;
+  margin-left: 28%;
+  padding: 3px 5px 3px 5px;
+  padding: 2%;
+  margin-bottom: 2%;
+  color: #000000;
+  background-color: #FFFFFF;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-weight: 700;
+}
+.a-mixin-with-button a:hover {
+  background-color: #061E91;
+  color: white;
+  transition: 300ms;
+}
+.a-mixin-with-button a:active {
   background-color: #666666;
 }
 * {
@@ -328,9 +352,10 @@ header nav ul li a a:hover {
 }
 .footer-container a {
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   margin: 5px;
   padding: 3px 5px 3px 5px;
+  padding: 2%;
   color: #000000;
   background-color: #FFFFFF;
   border: 1px solid black;
@@ -357,9 +382,10 @@ header nav ul li a a:hover {
   }
   .footer-container a {
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     margin: 5px;
     padding: 3px 5px 3px 5px;
+    padding: 2%;
     color: #000000;
     background-color: #FFFFFF;
     border: 1px solid black;
