@@ -1,6 +1,5 @@
 .tl-about-page {
 
-
     @media @desktop {
         padding-top: @tenth-percent;
         margin-top: @two-percent;
@@ -39,7 +38,10 @@
     border: @black-thin-border;
     margin-bottom: @five-percent;
 
-    .padding-for-about();
+    h3 {
+        padding-bottom: 1%;
+        font-family: 'Ultra', serif;
+    }
 }
 
 .ui-section-styling {
@@ -60,13 +62,8 @@
 .react-section-styling() {
     .getWidth(@one-hundred-percent);
     .custom-flex(center, center);
-    padding: @two-percent;
 }
 
 li {
     margin-top: @five-percent;
 } 
-
-.img-formater {
-    .getWidth(@maximum-percent);
-}
