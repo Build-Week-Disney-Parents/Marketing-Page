@@ -64,10 +64,9 @@
   
   .a-mixin {
     text-decoration: none;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     margin: 5px;
     padding: 3px 5px 3px 5px;
-    padding: @two-percent;
     color: @txt-color;
     background-color: @bg-color;
     border: @black-thin-border;
@@ -128,47 +127,4 @@
         background-color: #666666;
       }
     }
-}
-
-.padding-for-about() {
-
-  h3 {
-    padding: @one-percent;
-    padding-top: @two-percent;
-  }
-
-  p {
-    padding: @one-percent;
-    padding-bottom: @two-percent;
-  }
-}
-
-.a-mixin-with-button {
-
-   a {
-     text-decoration: none;
-     font-size: 3rem;
-     margin: 5px;
-     margin-left: @twenty-eight-percent;
-     padding: 3px 5px 3px 5px;
-     padding: @two-percent;
-     margin-bottom: @two-percent;
-     color: @txt-color;
-     background-color: @bg-color;
-     border: @black-thin-border;
-     border-radius: 5px;
-     font-weight: 700;
-
-    &:hover {
-      background-color: @footer-blue;
-      color: white;
-      transition: 300ms;
-     }
-
-    &:active {
-     background-color: #666666;
-    }
-
-  }
-
 }
