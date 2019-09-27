@@ -11,6 +11,8 @@
   html, body {
     font-family: 'Russo One', sans-serif;
     color: @txt-color;
+    margin: 0;
+    padding: 0;
   }
   
   h1, h2, h3, h4, h5 {
@@ -41,7 +43,7 @@
       background-image: url("../image/Background.PNG"), url("../image/Sides.PNG");
       background-size: contain, cover 100vh;
       background-position: top, top;
-      background-repeat: no-repeat, round 100vw;
+      background-repeat: no-repeat, repeat-y;
   
       @media @imageChange{
           background-image:none;
