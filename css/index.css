@@ -497,6 +497,10 @@ header nav ul li a a:hover {
   text-align: center;
   background-color: skyblue;
 }
+.dabutton {
+  text-decoration: none;
+  color: black;
+}
 .gallery {
   display: flex;
   align-content: center;
