@@ -241,9 +241,9 @@ header nav ul li a {
     justify-content: space-around;
   }
 }
-@media (min-width: 1000px) {
+@media (max-width: 500px) {
   header nav ul li a {
-    padding: 0 50px 0 50px;
+    margin-right: 40px;
   }
 }
 header nav ul li a a:hover {
@@ -452,6 +452,11 @@ header nav ul li a a:hover {
   flex-direction: column;
   margin: 130px 0 20px 0;
   padding-bottom: 20px;
+}
+@media (max-width: 900px) {
+  .aboutVouch {
+    margin: 20px 2% 0 2%;
+  }
 }
 .aboutVouch .reactButton {
   margin-left: 40%;

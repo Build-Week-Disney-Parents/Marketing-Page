@@ -20,11 +20,11 @@ var Click = 0;
 
         }
     });
-var Clicker = 0;
+var Clicker = 4;
     let manipulatableGal = document.querySelector(".S3")
     manipulatableGal.addEventListener('click', () => {
-        Clicker++
-        if (Clicker === 0){     
+        Clicker--
+        if (Clicker === 0 || Clicker === 4){     
                 Click = 3;
                 document.querySelector(".S1").src = "image/stroller4.jpg";
         }else if (Clicker === 1){
@@ -36,10 +36,10 @@ var Clicker = 0;
         }else if (Clicker === 3){
                 Click = 0;
                 document.querySelector(".S1").src = "image/stroller1.jpg";
-        }else {
+        }else{
                 document.querySelector(".S1").src = "image/stroller4.jpg";
                 Click = 3;
-                Clicker = 0;
+                Clicker = 4;
         }
     });
 
