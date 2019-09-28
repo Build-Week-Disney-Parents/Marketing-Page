@@ -234,46 +234,6 @@ body {
     background-image: none;
   }
 }
-@media (max-width: 900px) {
-  header nav {
-    justify-content: space-around;
-  }
-}
-header nav ul {
-  display: flex;
-  list-style-type: none;
-  font-size: 2rem;
-  width: 100%;
-}
-@media (max-width: 1350px) {
-  header nav ul {
-    justify-content: space-around;
-    background-color: #061E91;
-    padding-bottom: 40px;
-    border-bottom: 5px solid #868686;
-  }
-}
-header nav ul li a {
-  display: flex;
-  align-content: center;
-  text-decoration: none;
-  color: #FFFFFF;
-  margin-left: 60px;
-}
-@media (max-width: 1350px) {
-  header nav ul li a {
-    justify-content: space-around;
-  }
-}
-@media (max-width: 500px) {
-  header nav ul li a {
-    margin-right: 40px;
-  }
-}
-header nav ul li a a:hover {
-  background-color: white;
-  color: black;
-}
 .tablet-view {
   display: flex;
   justify-content: space-between;
@@ -473,6 +433,46 @@ header nav ul li a a:hover {
     font-weight: 600;
   }
 }
+@media (max-width: 900px) {
+  header nav {
+    justify-content: space-around;
+  }
+}
+header nav ul {
+  display: flex;
+  list-style-type: none;
+  font-size: 2rem;
+  width: 100%;
+}
+@media (max-width: 1350px) {
+  header nav ul {
+    justify-content: space-around;
+    background-color: #061e91;
+    padding-bottom: 40px;
+    border-bottom: 5px solid #868686;
+  }
+}
+header nav ul li a {
+  display: flex;
+  align-content: center;
+  text-decoration: none;
+  color: #FFFFFF;
+  margin-left: 60px;
+}
+@media (max-width: 1350px) {
+  header nav ul li a {
+    justify-content: space-around;
+  }
+}
+@media (max-width: 500px) {
+  header nav ul li a {
+    margin-right: 40px;
+  }
+}
+header nav ul li a a:hover {
+  background-color: white;
+  color: black;
+}
 .aboutVouch {
   display: flex;
   flex-direction: column;
@@ -576,6 +576,5 @@ li {
   margin-top: 5%;
 }
 .img-formater {
-  width: 100px;
-  height: 100px;
+  width: 100%;
 }
