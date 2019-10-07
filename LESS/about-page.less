@@ -1,12 +1,10 @@
 .tl-about-page {
-
     @media @desktop {
         padding-top: @tenth-percent;
         margin-top: @two-percent;
     }
 
     @media @tablets {
-
     padding-top: @twenty-percent;
     .custom-flex(center, center);
     flex-direction: column;
@@ -17,7 +15,6 @@
     }
 
     @media @phones {
-     
     padding-top: @quarter-percent;
     .custom-flex(center, center);
     flex-direction: column;
@@ -37,11 +34,7 @@
     color: @txt-color;
     border: @black-thin-border;
     margin-bottom: @five-percent;
-
-    h3 {
-        padding-bottom: 1%;
-        font-family: 'Ultra', serif;
-    }
+    .padding-for-about();
 }
 
 .ui-section-styling {
@@ -69,5 +62,5 @@ li {
 } 
 
 .img-formater {
-    .getWidth(@maximum-percent);
+   .getWidth(@maximum-percent);
 }

@@ -1,48 +1,3 @@
-header{
-
-    nav{
-        @media @tabletsMax{
-            justify-content: space-around;
-        }
-            ul{
-                display: flex;
-                list-style-type: none;
-                font-size: 2rem;
-                width: 100%;
-                
-                
-                    @media @imageChange{
-                    justify-content: space-around;
-                    background-color:#061E91;
-                    padding-bottom: 40px;
-                    border-bottom: 5px solid #868686;
-                    
-                    }
-                        li{ 
-                            a{ display: flex;
-                            align-content: center; 
-                            text-decoration: none;
-                            color: @bg-color;
-                            margin-left: 60px;
-                            
-                            @media @imageChange{
-                            justify-content: space-around;
-                            }
-                                @media @phonesMax{
-                                margin-right: 40px;
-                                }
-
-            
-                a:hover{
-                    background-color: white;
-                    color: black;
-                }
-                }
-                }
-                }
-
-}
-}
   .tablet-view {
     .custom-flex(space-between, center);
     flex-flow: row-reverse;
@@ -76,12 +31,14 @@ header{
       border: 1px solid black;
       border-radius: 15%;
       transition: 0.25s;
+
       &:hover {
         background-color: black;
         color: white;
       }
+      
       &:active {
-        background-color: #666666;
+        background-color: @button-background-color;
       }
   
     .header-h1 {

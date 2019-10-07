@@ -1,0 +1,41 @@
+header {
+    nav {
+      @media @tabletsMax {
+        justify-content: space-around;
+      }
+      ul {
+        display: flex;
+        list-style-type: none;
+        font-size: 2rem;
+        width: 100%;
+  
+        @media @imageChange {
+          justify-content: space-around;
+          background-color: #061e91;
+          padding-bottom: 40px;
+          border-bottom: 5px solid #868686;
+        }
+        li {
+          a {
+            display: flex;
+            align-content: center;
+            text-decoration: none;
+            color: @bg-color;
+            margin-left: 60px;
+  
+            @media @imageChange {
+              justify-content: space-around;
+            }
+            @media @phonesMax {
+              margin-right: 40px;
+            }
+  
+            a:hover {
+              background-color: white;
+              color: black;
+            }
+          }
+        }
+      }
+    }
+  }
